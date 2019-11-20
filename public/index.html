@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Sahara Online Shopping</title>
+</head>
+
+<body class="site">
+  <header>
+    <h1>Welcome, Sahara Prime Member!</h1>
+  </header>
+
+  <main class="site-content">
+    <div id="app" class="column-content">
+      <div class="heading">
+        <h1>Current Products</h1>
+      </div>
+
+      <ul>
+        <li class="productEntry" v-for="product in products">
+          <div class="pEntryPart">
+            <input type="checkbox" v-model="product.checked">
+          </div>
+          <div class="pEntryPart">
+            <img :src=product.image>
+          </div>
+          <div class="pEntryPart">
+            <h2>{{ product.name }}</h2>
+            <p>${{ product.price }}</p>
+          </div>
+        </li>
+      </ul>
+
+      <button @click="submitPurchase">Submit Purchase</button>
+
+      <div class="ballot" v-if="cart.length > 0">
+        <div class="heading">
+          <h1>Shopping Cart</h1>
+        </div>
+
+        <ul>
+          <li class="productEntry" v-for="product in cart">
+            <div class="pEntryPart">
+              <img :src=product.image>
+            </div>
+            <div class="pEntryPart">
+              <h2>{{ product.name }}</h2>
+              <p>${{ product.price }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

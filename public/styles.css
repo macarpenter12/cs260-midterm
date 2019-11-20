@@ -1,0 +1,147 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  margin: 8px;
+}
+
+p {
+  margin: 6px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  padding: 20px 100px 0px 100px;
+  background-color: #232f3e;
+  color: #fff;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.title h1,
+.title h2 {
+  margin: 0px;
+}
+
+.title h1 {
+  border-top: 1px solid #000;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #232f3e;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  margin: 8px;
+}
+
+/* Content */
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  padding: 20px 100px 0px 100px;
+  flex: 1;
+}
+
+.column-content {
+  margin: 20px 50px 70px 50px;
+  flex-direction: column;
+}
+
+.content {
+  margin: 20px 50px 70px 50px;
+  display: flex;
+}
+
+/* Admin */
+
+.heading {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex: 0 0 100%;
+}
+
+.heading h1 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.heading h2 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.add,
+.edit {
+  flex: 1;
+}
+
+.deleteButton {
+  width: 36px;
+  height: 36px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* Form */
+
+.form input,
+textarea,
+select,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  margin: 4px;
+}
+
+.form input,
+textarea {
+  width: 220px;
+}
+
+/* Candidate listings */
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.productEntry {
+  margin-bottom: 30px;
+}
+
+.pEntryPart {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+/* Ballot */
+
+.cart ul {
+  margin-left: 32px;
+}
